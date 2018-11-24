@@ -280,6 +280,11 @@ body {
   font-family: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
   font-size: 1.6rem; }
 
+a {
+  color: #5D9AB2; }
+  a:hover {
+    color: #5D9AB2; }
+
 .c-button {
   display: inline-block;
   padding: 1.0rem 3.0rem;
@@ -290,8 +295,35 @@ body {
   font-size: 1.4rem; }
   .c-button:hover {
     background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    color: inherit;
-    text-decoration: inherit; }
+    color: #fff;
+    text-decoration: none; }
+
+.c-card {
+  padding-left: 2.0rem;
+  padding-right: 2.0rem;
+  padding-bottom: 6.0rem;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .c-card {
+      flex: 1; } }
+  .c-card__title {
+    margin-bottom: 1.0rem;
+    font-size: 2.0rem; }
+  .c-card__text {
+    margin-bottom: 2.0rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    opacity: 0.8; }
+  .c-card__icon {
+    display: inline-block;
+    margin-bottom: 2.0rem;
+    font-size: 4.0rem;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    color: #fff; }
 
 .p-hero-image {
   display: flex;
@@ -311,11 +343,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.2em;
     font-size: 15vw; }
+    @media screen and (min-width: 768px) {
+      .p-hero-image__title {
+        font-size: 11.5rem; } }
   .p-hero-image__subtitle {
     margin-bottom: 2.0rem;
     font-size: 1.8rem; }
+    @media screen and (min-width: 768px) {
+      .p-hero-image__subtitle {
+        font-size: 2.4rem; } }
+
+.p-cards__container {
+  padding-top: 8.0rem;
+  padding-bottom: 2.0rem; }
   @media screen and (min-width: 768px) {
-    .p-hero-image__title {
-      font-size: 11.5rem; }
-    .p-hero-image__subtitle {
-      font-size: 2.4rem; } }
+    .p-cards__container {
+      display: flex;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto; } }

@@ -1,0 +1,13 @@
+.p-cards {
+    &__container {
+        padding-top: 8.0rem;
+        padding-bottom: 2.0rem;
+        
+        @include min-screen($BREAK_POINT_PC) {
+            display: flex;
+            max-width: $PAGE_MAX_WIDTH;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

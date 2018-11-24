@@ -6,3 +6,11 @@ body {
     font-family: $FONT_FAMILY;
     font-size: 1.6rem;
 }
+
+a {
+    color: $MAIN_COLOR;
+    
+    &:hover {
+        color: $MAIN_COLOR;
+    }
+}

@@ -9,7 +9,7 @@
 
     &:hover {
         background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-        color: inherit;
-        text-decoration: inherit;
+        color: $TEXT_BRIGHT_COLOR;
+        text-decoration: none;
     }
 }
