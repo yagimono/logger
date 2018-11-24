@@ -1,0 +1,15 @@
+.c-button {
+    display: inline-block;
+    padding: 1.0rem 3.0rem;
+    border: solid 0.3rem currentColor;
+    border-radius: 0.6rem;
+    background-color: $ACCENT_COLOR;
+    color: $TEXT_BRIGHT_COLOR;
+    font-size: 1.4rem;
+
+    &:hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+        color: inherit;
+        text-decoration: inherit;
+    }
+}

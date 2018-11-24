@@ -1,0 +1,38 @@
+.p-hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 45.0rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/src/img/fruits.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $TEXT_BRIGHT_COLOR;
+    text-align: center;
+
+    &__logo {
+        width: 20%;
+    }
+
+    &__title {
+        margin-bottom: 1.0rem;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.2em;
+        font-size: 15vw;
+    }
+
+    &__subtitle {
+        margin-bottom: 2.0rem;
+        font-size: 1.8rem;
+    }
+
+    @include min-screen($BREAK_POINT_PC) {
+        &__title {
+            font-size: 11.5rem;
+        }
+
+        &__subtitle {
+            font-size: 2.4rem;
+        }
+    }
+}
