@@ -1,0 +1,33 @@
+.c-banner {
+    background-color: $MAIN_COLOR;
+    color: $TEXT_BRIGHT_COLOR;
+
+    &__container {
+        @include min-screen($BREAK_POINT_PC) {
+            display: flex;
+            max-width: $PAGE_MAX_WIDTH;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__photo {
+        min-height: 20.0rem;
+        background-image: url(/src/img/note.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include min-screen($BREAK_POINT_PC) {
+            flex: 3;
+        }
+    }
+
+    &__box {
+        padding: 2.0rem;
+        
+        @include min-screen($BREAK_POINT_PC) {
+            flex: 2;
+            padding: 5.0rem;
+        }
+    }
+}
